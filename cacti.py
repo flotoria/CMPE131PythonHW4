@@ -1,4 +1,8 @@
 def cacti_number(arr):
+
+    if len(arr) == 1 and len(arr[0]) == 1:
+        return 1
+
     num = 0
     for row in range(len(arr)):
         for col in range(len(arr[0])):
