@@ -9,7 +9,7 @@ def cacti_number(arr):
                     arr[row][col] = 1
                 
                 # edges 
-                if arr[row][col] == 0 and (row == 0 or col == 0 or row == len(arr) - 1 or row == len(arr[0]) - 1): 
+                if arr[row][col] == 0 and (row == 0 or col == 0 or row == len(arr) - 1 or col == len(arr[0]) - 1): 
                     if row == 0 and col != 0 and col != len(arr[0]) - 1 and arr[row][col - 1] == 0 and arr[row][col + 1] == 0 and arr[row + 1][col] == 0:
                         num += 1
                         arr[row][col] = 1
